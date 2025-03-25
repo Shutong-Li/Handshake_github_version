@@ -1,0 +1,45 @@
+/* Copyright (C) 2025 HandShake
+Licensed under the Apache License, Version 2.0.
+See LICENSE file for details. */
+
+@font-face {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/volkhov/v17/SlGQmQieoJcKemNecTUEhQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.dropdown-menu {
+  background: #DBDADA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: inherit;
+  width:inherit;
+  min-width: inherit;
+  justify-content: space-evenly;
+  height: calc(80px + 2vw);
+  
+  
+  
+}
+
+.dropdown-link {
+  color: black; /* Brown color */
+  font-family: Volkhov;
+  text-decoration: none; /* Remove underline */
+  font-size: calc(8px + 0.35vw); /* Font size for links */
+  font-weight: regular;
+  
+  
+  
+}
+
+
+@media (hover: hover){
+  .dropdown-link:hover {
+    color: black;
+    -webkit-text-stroke: 0.5px black;
+  }
+}

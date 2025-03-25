@@ -1,0 +1,115 @@
+/* EditProfileCSS.css */
+
+/* General styling for the profile container */
+.profile-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.edit-picture {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Multi-select dropdowns */
+.select-container {
+    width: 100%;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.save-button, .cancel-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.save-button {
+    background: #007bff;
+    color: white;
+    border: none;
+}
+
+.cancel-button {
+    background: #6c757d;
+    color: white;
+    border: none;
+}
+
+.save-button:hover {
+    background: #0056b3;
+}
+
+.cancel-button:hover {
+    background: #5a6268;
+}

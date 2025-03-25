@@ -1,0 +1,169 @@
+/* Copyright (C) 2025 HandShake
+Licensed under the Apache License, Version 2.0.
+See LICENSE file for details. */
+
+/* Full page green background */
+@font-face {
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/volkhov/v17/SlGQmQieoJcKemNecTUEhQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+
+html, body ,#root {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    
+    
+}
+.page-content { 
+    background-color: #ececec; /* Grey background */
+    min-height: 100vh;
+    min-width: -webkit-fill-available;
+    min-width: fit-content;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 12px solid #4C7748;
+    border-bottom: none;
+
+
+}
+
+/* Header container (for the Handshake title and navigation links) */
+
+/* Footer container */
+.footer-container {
+    background-color: #ececec; /* Light grey background */
+    /*height: 5vh;  5% height for footer */
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: calc(7.5px + 0.25vw);
+    color: black;
+    /*position: fixed;*/
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    flex-shrink: 0;
+}
+
+.footer-links {
+    display:flex;
+    gap: 13px;
+   /* display: grid;
+    gap: 1rem;  Space between links 
+    grid-template-columns: repeat(4, minmax(0,100px));*/
+    text-align: center;
+    justify-content: right;
+    
+}
+
+.footer-link {
+    color: black; /* Brown color */
+    text-decoration: none; /* Remove underline */
+    font-weight: regular;
+}
+
+.footer-link:hover {
+    color:black;
+}
+
+/* Main content container */
+.main-content {
+    flex: 1 0 auto;
+}
+
+.header-container {
+  background-color: #DBDADA; /* Light grey background */
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  padding-right: 0;
+  box-sizing: border-box;
+  overflow-y: visible;
+  min-height: 40px;
+  height: 5vw;
+  max-height: 60px;
+  /*position: fixed;*/
+  z-index: 1;
+  flex-shrink: 0;
+  
+}
+
+/* Handshake title */
+.handshake-title {
+    font-family: Volkhov; /* Times New Roman font */
+    font-weight: regular;
+    background-color: #DBDADA;
+    border: none;
+    color: #663300; /* Brown color */
+    font-size: calc(18px + 0.9vw); /* Adjust font size as needed */
+    margin: 0; /* Remove extra margin */
+    padding: 0; /* No padding */
+    align-self: center;
+}
+
+/* Navigation links in the header */
+.header-links {
+    display:flex;
+    gap: 13px;
+   /* display: grid;
+    gap: 1rem;  Space between links 
+    grid-template-columns: repeat(4, minmax(0,100px));*/
+    align-items: center;
+    
+}
+
+#register {
+    padding-right: 15px;
+}
+
+.header-items{
+  display:flex;
+  overflow: visible;
+}
+
+.header-link {
+    color: black; /* Brown color */
+    font-family: Volkhov;
+    text-decoration: none; /* Remove underline */
+    font-size: calc(8px + 0.45vw); /* Font size for links */
+    font-weight: regular;
+    /*padding: 15px;*/
+}
+
+@media (hover: hover) {
+    .header-link:hover {
+        color: black;
+        /*font-weight: bold;  Dark green hover color */
+        -webkit-text-stroke: 0.5px black;
+    }
+}
+
+
+.dropdown {
+    overflow: visible;
+    max-width: 70px;
+    width:4vw;
+    min-width: 45px;
+    text-align:center;
+    align-items:center;
+    
+    
+}
+
+.dropdown img {
+    min-height: 22px;
+    height: 2.78vw;
+    max-height: 32px;
+    max-width: 32px;
+}
+
+.dropdown img:hover {
+  cursor: pointer;
+}

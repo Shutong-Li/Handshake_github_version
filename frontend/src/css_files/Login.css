@@ -1,0 +1,110 @@
+/* Copyright (C) 2025 HandShake
+Licensed under the Apache License, Version 2.0.
+See LICENSE file for details. */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .left-align-form {
+    text-align: left;
+    width: clamp(200px,90%,300px);
+  }
+
+  .register-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-center {
+    background-color: #FAF9F6;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 30px;
+    width: clamp(300px, 50%, 450px);
+    height: clamp(350px, 30vh, 450px);
+    margin-top: calc(20vh - 50px);
+    z-index: 1;
+    align-items: center;
+  }
+
+  .register-link {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    
+  }
+  
+  .register-link span {
+    margin-right: 5px;
+  }
+  
+  .register-link a {
+    font-weight: bold;
+    color: black;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease
+  }
+  
+  .custom-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem; /* Increase the space between form groups */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit-button {
+    background-color: #8B4513; /* Saddle Brown */
+    border-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (hover: hover){
+  .submit-button:hover {
+    background-color: #5A2E0F; /* Darker Brown */
+    border-color: #5A2E0F;
+  }
+
+  .register-link a:hover {
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
